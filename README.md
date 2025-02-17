@@ -51,7 +51,7 @@ export GITHUB_TOKEN="your_personal_access_token"
 Provide the organisation name followed by the repository names you want to delete:
 
 ```bash
-./delete_github_repos.sh <org_name> <repo1> <repo2> ...
+./delete_github_repos.sh <org_name> <repo1> <repo2> ...``
 ```
 
 #### Example:
@@ -74,7 +74,7 @@ Warning: This will permanently delete the following repositories from org 'my-or
 Are you sure you want to proceed? (yes/no):
 ```
 
-Type \`\` to proceed or anything else to cancel.
+Type `yes` to proceed or anything else to cancel.
 
 ---
 
@@ -100,7 +100,7 @@ Done.
   ```bash
   echo $GITHUB_TOKEN
   ```
-- Your PAT must have \`\` permissions.
+- Your PAT must have `Read and write` permissions under Administration for Repository Permissions.
 
 ### **2. Repository Not Found**
 
@@ -109,7 +109,7 @@ Done.
 
 ### **3. HTTP Errors**
 
-- `403 Forbidden`: Your token does not have `delete_repo` permissions.
+- `403 Forbidden`: Your token does not have repo read and write permissions.
 - `404 Not Found`: The repo might not exist or you lack permissions.
 
 ---
